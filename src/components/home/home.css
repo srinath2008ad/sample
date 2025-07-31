@@ -1,0 +1,162 @@
+html, body {
+    overflow-x: hidden;
+}
+
+.home1 {
+    background-color: white;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1186&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    /* opacity:0.7; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:80px;
+}
+
+.home1-ovverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 60, 180, 0.1);
+    z-index: 1;
+}
+
+.home1head {
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    font-size: 7vh;
+}
+
+.home1para {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5vh;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.lostbtn,
+.Foundbtn {
+    background-color: rgba(0, 60, 180, 0);
+    /* 0.4 is semi-transparent */
+    height: 7vh;
+    width: 13vw;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3.5vh;
+    margin: 30px 10px 10px 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 2vh;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lostbtn,
+    .Foundbtn {
+        width: 60vw;
+        padding: 0px;
+    }
+    .home1head{
+        font-size: 5vh;
+        padding-top: 40px;
+    }
+}
+
+.LocateXdescription {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    float: left;
+}
+
+.home2head {
+    font-family: poppins, sans-serif;
+    font-size: 6vh;
+    font-weight: 700;
+}
+
+.home2para {
+    font-family: "Poppins", sans-serif;
+    font-size: 2vh;
+    color: black;
+}
+
+.loginbtn {
+    background-color: rgba(0, 60, 180, 0);
+    /* 0.4 is semi-transparent */
+    height: 7vh;
+    width: 13vw;
+    color: black;
+    border: 1px solid black;
+    border-radius: 3.5vh;
+    margin: 30px 10px 10px 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 2vh;
+    cursor: pointer;
+}
+
+.home2img {
+    background-image: url(https://images.pexels.com/photos/159490/yale-university-landscape-universities-schools-159490.jpeg?_gl=1*1hxma8q*_ga*NjI2OTUzNDU1LjE3NTI2NzM1MTY.*_ga_8JE65Q40S6*czE3NTI2NzM1MTYkbzEkZzEkdDE3NTI2NzQxMzIkajE5JGwwJGgw);
+    background-size: cover;
+    background-position: center;
+    width: 30vw;
+    height: 80vh;
+    border-radius: 15px;
+    float: right;
+}
+
+@media(max-width: 600px) {
+    .LocateXdescription {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home2head{
+        font-size: 5vh;
+        padding-top:40px;
+        /* padding-left: 20px; */
+    }
+    .home2para {
+        font-size: 2vh;
+        /* padding-left: 20px; */
+        white-space: nowrap; /* Prevents line breaks */
+    }
+    .loginbtn{
+        width: 60vw;
+        /* padding-left: 20px; */
+    }
+    .home2{
+        padding-left: 20px;
+    }
+    .home2img{
+        width: 90vw;
+        height: 50vh;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
