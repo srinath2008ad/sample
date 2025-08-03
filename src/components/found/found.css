@@ -1,0 +1,141 @@
+.found-container {
+    margin-top: 90px;
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+}
+
+.found1 {
+    margin-top: 2%;
+    padding-left: 10%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.found1txt {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+}
+
+.image-found {
+    background-image: url(https://assets3.thrillist.com/v1/image/1303640/size/tl-cover_story_2x/the-25-most-beautiful-college-campuses-in-america);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 70vw;
+    border-radius: 15px;
+    padding-top: 10%;
+}
+
+.found1title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 5%;
+    font-size: 2.5rem;
+}
+
+.found1text {
+    font-family: 'Poppins', sans-serif;
+    padding: 5%;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 500px) {
+    .found1 {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5%;
+    }
+
+    .image-found {
+        width: 80vw;
+        height: 40vh;
+    }
+
+    .found1title {
+        font-size: 2rem;
+    }
+
+    .found1text {
+        font-size: 1rem;
+    }
+}
+
+
+.report-form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 20px;
+    padding-bottom: 30px;
+    /* background-color: yellow; */
+}
+
+.form-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+.form-labels {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.found-form {
+    align-self:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    width: 50%;
+    border-radius: 3%;
+}
+
+.form-inputs {
+    height: 4vh;
+    border-radius: 1vh;
+}
+
+.form-text {
+    height: 10vh;
+    border-radius: 1vh;
+}
+
+.submit-button2{
+    background-color: #6c8ea4;
+    border: none;
+    color: whitesmoke;
+    height: 5vh;
+    width: 10vw;
+    border-radius: 1vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: center;
+}
+
+@media(max-width: 500px) {
+    .report-form {
+        width: 90%;
+    }
+    
+    .found-form {
+        width: 90%;
+    }
+
+    .form-inputs {
+        width: 100%;
+    }
+
+    .submit-button2 {
+        width: 80%;
+    }
+    
+}

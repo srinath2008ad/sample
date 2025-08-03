@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: white;
+    width: 100vw;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 50vw;
+    box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.15);
+    /* subtle bottom shadow */
+    position:fixed;
+    top: 0;
+}
+
+.title {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    /* Light font weight */
+    font-size: 20px;
+}
+
+.navbar-list {
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    gap: 15px;
+    font-size: 17px;
+    transition-duration: 1s;
+}
+.navbar-home{
+    text-decoration: none;
+    color: black;
+}
+.navbar-lost{
+    text-decoration: none;
+    color: black;
+}
+.navbar-found{
+    text-decoration: none;
+    color: black;
+}
+.navbar-home:hover {
+    text-decoration: underline;
+    color: black;
+    text-underline-offset: 6px;
+    /* Increase this value for more gap */
+}
+
+.navbar-lost:hover {
+    text-decoration: underline;
+    color: black;
+    text-underline-offset: 6px;
+    /* Increase this value for more gap */
+}
+
+.navbar-found:hover {
+    text-decoration: underline;
+    color: black;
+    text-underline-offset: 6px;
+    /* Increase this value for more gap */
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .navbar-list {
+        gap: 10px;
+        align-items: center;
+    }
+}
